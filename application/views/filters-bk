@@ -1,0 +1,135 @@
+<?php if (isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'product_painting') !== false || strpos($_SERVER['REQUEST_URI'], 'Calligraphy') !== false) { ?>
+							<button type="button" class="collapsible">Painting</button>
+							<div class="content">
+								<p style="<?= $this->uri->segment(3) == 'Calligraphy' ? "background-color: #f2f2f2; padding: 4px 8px;" : '' ?>"><a href="<?= base_url() ?>home/listing/Calligraphy">Calligraphy</a></p>
+								<p><a href="">Cityscape</a></p>
+								<p><a href="">Drawings</a></p>
+								<p><a href="">Figurative</a></p>
+								<p><a href="">Floral</a></p>
+								<p><a href="">Landscape</a></p>
+								<p><a href="">Miniature</a></p>
+								<p><a href="">Pen and ink</a></p>
+								<p><a href="">Seascape</a></p>
+							</div>
+							<button type="button" class="collapsible">Artist</button>
+							<div class="content">
+								<p>-</p>
+								<p>-</p>
+								<p>-</p>
+								<p>-</p>
+							</div>
+						<?php } ?>
+
+						<?php if (isset($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], 'product_prints') !== false || strpos($_SERVER['REQUEST_URI'], 'Calligraphy') !== false)) { ?>
+							<button type="button" class="collapsible">Prints</button>
+							<div class="content">
+								<p style="<?= $this->uri->segment(3) == 'Calligraphy' ? "background-color: #f2f2f2; padding: 4px 8px;" : '' ?>"><a href="<?= base_url() ?>home/listing/Calligraphy">Calligraphy</a></p>
+								<p><a href="">Cityscape</a></p>
+								<p><a href="">Landscape</a></p>
+								<p><a href="">Seascape</a></p>
+								<p><a href="">Abstract</a></p>
+								<p><a href="">Historical</a></p>
+								<p><a href="">Traditional</a></p>
+								<p><a href="">Quotations</a></p>
+								<p><a href="">Kids Collection</a></p>
+							</div>
+							<button type="button" class="collapsible">Material</button>
+							<div class="content">
+								<p><a href="">Paper Type1</a></p>
+								<p><a href="">Paper Type2</a></p>
+								<p><a href="">Canvas</a></p>
+								<p><a href="">Others</a></p>
+							</div>
+						<?php } ?>
+
+						
+
+						<?php if (isset($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], 'product_wooden_art') !== false || strpos($_SERVER['REQUEST_URI'], 'Calligraphy') !== false)) { ?>
+							<button type="button" class="collapsible">Wooden Artwork</button>
+							<div class="content">
+								<p style="<?= $this->uri->segment(3) == 'Calligraphy' ? "background-color: #f2f2f2; padding: 4px 8px;" : '' ?>"><a href="<?= base_url() ?>home/listing/Calligraphy">Calligraphy</a></p>
+								<p><a href="">Motives</a></p>
+								<p><a href="">Quotations</a></p>
+								<p><a href="">Engraving</a></p>
+								<p><a href="">Unique</a></p>
+								<p><a href="">More</a></p>
+							</div>
+						<?php } ?>
+
+						<?php if (isset($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], 'product_exclusive') !== false || strpos($_SERVER['REQUEST_URI'], 'cushions') !== false)) { ?>
+							<button type="button" class="collapsible">Exclusives</button>
+							<div class="content">
+								<p style="<?= $this->uri->segment(3) == 'cushions' ? "background-color: #f2f2f2; padding: 4px 8px;" : '' ?>"><a href="<?= base_url() ?>home/listing/cushions">Cushions</a></p>
+								<p><a href="">Tapestry</a></p>
+								<p><a href="">Mirrors</a></p>
+								<p><a href="">Floral</a></p>
+								<p><a href="">Home Decor</a></p>
+							</div>
+						<?php } ?>
+
+						<?php if (isset($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], 'what_we_frame') !== false || strpos($_SERVER['REQUEST_URI'], 'Degree') !== false)) { ?>
+							<button type="button" class="collapsible">Educational</button>
+							<div class="content">
+								<p style="<?= $this->uri->segment(3) == 'Degree' ? "background-color: #f2f2f2; padding: 4px 8px;" : '' ?>"><a href="<?= base_url() ?>home/listing/Degree">Degree</a></p>
+								<p><a href="">Diploma</a></p>
+								<p><a href="">Certificate</a></p>
+								<p><a href="">Sports</a></p>
+								<p><a href="">Memorabilia</a></p>
+								<p><a href="">Custom</a></p>
+							</div>
+							<button type="button" class="collapsible">Professional</button>
+							<div class="content">
+								<p>Awards</p>
+								<p>Appreciations</p>
+								<p>Medals</p>
+								<p>Swords</p>
+								<p>Custom</p>
+							</div>
+							<button type="button" class="collapsible">Frame Styles</button>
+							<div class="content">
+								<p>Simple Frame</p>
+								<p>Double Frame</p>
+								<p>Single Mount Frame</p>
+								<p>Double Mount Frame</p>
+								<p>Floater Frame</p>
+								<p>Box Frame</p>
+								<p>Shadow Box Frame</p>
+								<p>Collage Frames</p>
+							</div>
+						<?php } ?>
+
+						<?php if (isset($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], 'moulding') !== false || strpos($_SERVER['REQUEST_URI'], 'Material') !== false)) { ?>
+							<button type="button" class="collapsible">Moulding</button>
+							<div class="content">
+								<p style="<?= $this->uri->segment(3) == 'Material' ? "background-color: #f2f2f2; padding: 4px 8px;" : '' ?>"><a href="<?= base_url() ?>home/listing/Material">Material</a></p>
+								<p>Function</p>
+								<p>Shape</p>
+								<p>Width</p>
+								<p>Rabbet</p>
+								<p>Made</p>
+							</div>
+							<button type="button" class="collapsible">Colour</button>
+							<div class="content">
+								<p>1</p>
+								<p>2</p>
+								<p>3</p>
+								<p>4</p>
+								<p>And more</p>
+							</div>
+						<?php } ?>
+
+						<?php if (isset($_SERVER['HTTP_REFERER']) && (strpos($_SERVER['HTTP_REFERER'], 'mat_board') !== false || strpos($_SERVER['REQUEST_URI'], 'Dimension') !== false)) { ?>
+							<button type="button" class="collapsible">Matboards</button>
+							<div class="content">
+								<p style="<?= $this->uri->segment(3) == 'Dimension' ? "background-color: #f2f2f2; padding: 4px 8px;" : '' ?>"><a href="<?= base_url() ?>home/listing/Dimension">Dimension</a></p>
+								<p>Thickness</p>
+								<p>Brand</p>
+								<p>Made</p>
+							</div>
+							<button type="button" class="collapsible">Colour</button>
+							<div class="content">
+								<p>1</p>
+								<p>2</p>
+								<p>3</p>
+							</div>
+						<?php } ?>

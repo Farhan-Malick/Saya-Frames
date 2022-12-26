@@ -1,0 +1,9 @@
+-https://gist.github.com/makenova/78bb63aaa1050e2ad8019ee1e7e7b433
+-if get error "recipe for target 'coders/MagickCore_libMagickCore_7_Q16HDRI_la-heic.lo' failed" then run below command:
+	sudo apt-get purge libheif-dev
+-http://www.fmwconcepts.com/imagemagick/picframe/index.php
+
+bash picframe.sh -f 2 -m 20 -b 1 <source> <destination>
+
+
+chown -R <username from which logged in> /var/www/html

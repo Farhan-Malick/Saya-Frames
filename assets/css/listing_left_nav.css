@@ -1,0 +1,45 @@
+.just-padding {
+    padding: 15px;
+    margin-top: 35px;
+}
+
+.list-group.list-group-root {
+    padding: 0;
+    overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+    margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+}
+.list-group a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    background-color: ghostwhite
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+    border-top-width: 0;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+    padding-left: 40px;
+    /*line-height: 1;*/
+    font-size: 12px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+    padding-left: 45px;
+}
+
+.list-group-item .fa {
+    margin-right: 5px;
+}
+
+.list-group-item {
+    border: none;
+}

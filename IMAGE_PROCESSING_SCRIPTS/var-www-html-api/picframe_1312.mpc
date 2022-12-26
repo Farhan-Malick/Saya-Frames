@@ -1,0 +1,24 @@
+id=MagickPixelCache
+magick-signature=4200613236
+class=DirectClass  colors=1  alpha-trait=Blend
+number-channels=4  number-meta-channels=0
+columns=1  rows=1 depth=8
+colorspace=sRGB
+compression=Zip  quality=0
+rendering-intent=Perceptual
+gamma=0.454545
+red-primary=0.64,0.33  green-primary=0.3,0.6  blue-primary=0.15,0.06
+white-point=0.3127,0.329
+date:create=2021-01-07T15:21:53+00:00
+date:modify=2021-01-07T15:21:53+00:00
+png:IHDR.bit-depth-orig=1
+png:IHDR.bit_depth=1
+png:IHDR.color-type-orig=3
+png:IHDR.color_type={3 (Indexed)}
+png:IHDR.interlace_method={0 (Not interlaced)}
+png:IHDR.width,height={1, 1}
+png:PLTE.number_colors=1
+png:sRGB={intent=0 (Perceptual Intent)}
+png:tRNS={chunk was found}
+
+:
