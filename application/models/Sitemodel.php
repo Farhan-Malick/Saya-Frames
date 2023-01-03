@@ -18,9 +18,9 @@ class Sitemodel extends CI_Model
                 foreach ($data as $d) {
                     $data_array[$d->section_id] = json_decode($d->data);
                 }
-                // echo "<pre>";
-                // print_r($data_array);
-                // echo "</pre>";exit;
+                    // echo "<pre>";
+                    // print_r($data_array);
+                    // echo "</pre>";exit;
                 return $data_array;
             } else {
                 return false;
@@ -269,6 +269,7 @@ class Sitemodel extends CI_Model
         $obj = new Dbase();
         $inserted = $obj->insert($data, "customers");
         if ($inserted) {
+          
             return true;
         } else {
             return false;

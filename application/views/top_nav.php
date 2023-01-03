@@ -453,7 +453,7 @@ p.cartbar-item-price {
                         <span class="dropdown-item" style="font-size: 0.9rem;">
                             <i class="fa fa-cog"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Account</a>
                         </span>
-                        <?php if ($this->session->userdata('logged_in')) { ?>
+                        <?php if ($this->session->userdata('customer_logged_in')) { ?>
                         <span class="dropdown-item" style="font-size: 0.9rem;">
                             <i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
                                 href="<?= base_url('login/logout'); ?>">Logout</a>

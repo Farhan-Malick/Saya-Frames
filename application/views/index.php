@@ -101,7 +101,7 @@
 		</ol> -->
 
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item home_bsection active div-sec" tabIndex=1 title="image1"
+            <div class="carousel-item home_bsection active " tabIndex=1 title="image1"
                 style="background-image: url('<?php echo isset($page_data[1]->image1) ? $page_data[1]->image1 : '' ?>');background-size: cover;background-position: center; background-repeat: no-repeat">
                 <h1><?php echo isset($page_data[1]->main_heading1) ? $page_data[1]->main_heading1 : '' ?>
                 </h1>
@@ -120,7 +120,7 @@
                 <!-- <img src="<?php echo isset($page_data[1]->image1) ? $page_data[1]->image1 : '' ?>"
                     class="img-fluid img-sec" tabIndex=1 title="image1" alt=""> -->
             </div>
-            <div class="carousel-item home_bsection div-sec" tabIndex=1 title="image2"
+            <div class="carousel-item home_bsection " tabIndex=1 title="image2"
                 style="background-image: url('<?php echo isset($page_data[1]->image2) ? $page_data[1]->image2 : '' ?>');background-size: cover; background-position: center; background-repeat: no-repeat">
                 <h1><?php echo isset($page_data[1]->main_heading2) ? $page_data[1]->main_heading2 : '' ?>
                 </h1>
@@ -139,7 +139,7 @@
                     class="img-fluid img-sec" tabIndex=1 title="image2" alt=""> -->
                 </div>
             </div>
-            <div class="carousel-item home_bsection div-sec" tabIndex=1 title="image3"
+            <div class="carousel-item home_bsection " tabIndex=1 title="image3"
                 style="background-image: url('<?php echo isset($page_data[1]->image3) ? $page_data[1]->image3 : '' ?>');background-size: cover; background-position: center; background-repeat: no-repeat">
                 <h1><?php echo isset($page_data[1]->main_heading3) ? $page_data[1]->main_heading3 : '' ?>
                 </h1>
@@ -158,7 +158,7 @@
                 <!-- <img src="<?php echo isset($page_data[1]->image3) ? $page_data[1]->image3 : '' ?>"
                     class="img-fluid img-sec" tabIndex=1 title="image3"alt=""> -->
             </div>
-            <div class="carousel-item home_bsection div-sec" tabIndex=1 title="image4"
+            <div class="carousel-item home_bsection " tabIndex=1 title="image4"
                 style="background-image: url('<?php echo isset($page_data[1]->image4) ? $page_data[1]->image4 : '' ?>');background-size: cover; background-position: center; background-repeat: no-repeat">
                 <h1><?php echo isset($page_data[1]->main_heading4) ? $page_data[1]->main_heading4 : '' ?>
                 </h1>
@@ -177,7 +177,7 @@
                 <!-- <img src="<?php echo isset($page_data[1]->image4) ? $page_data[1]->image4 : '' ?>"
                     class="img-fluid img-sec" tabIndex=1 title="image4" alt=""> -->
             </div>
-            <div class="carousel-item home_bsection div-sec" tabIndex=1 title="image5"
+            <div class="carousel-item home_bsection " tabIndex=1 title="image5"
                 style="background-image: url('<?php echo isset($page_data[1]->image5) ? $page_data[1]->image5 : '' ?>');background-size: cover;background-position: center; background-repeat: no-repeat">
 
                 <h1><?php echo isset($page_data[1]->main_heading5) ? $page_data[1]->main_heading5 : '' ?>
@@ -209,7 +209,7 @@
     </div>
 </section>
 
-<section class="home_bsection home_bg1 div-sec bottomSpace" tabIndex=2 title="bg_img"
+<section class="home_bsection home_bg1  bottomSpace" tabIndex=2 title="bg_img"
     style="background-image: url('<?php echo isset($page_data[2]->bg_img) ? $page_data[2]->bg_img  : "" ?>');background-size: cover;background-position: center; background-repeat: no-repeat;">
     <h1 class="text-white" id="mainHeading">
         <?php echo isset($page_data[2]->main_heading) ? $page_data[2]->main_heading : "" ?>
@@ -225,7 +225,7 @@
     </div>
     <!-- <img id="" src="" class="img-fluid img-sec" tabIndex=2 title="bg_img"  alt=""> -->
 </section>
-<section class="home_bsection div-sec" tabIndex=12 title="bg_img"
+<section class="home_bsection " tabIndex=12 title="bg_img"
     style="background-image: url('<?php echo isset($page_data[12]->bg_img) ? $page_data[12]->bg_img  : "" ?>');background-size: cover;background-position: center; background-repeat: no-repeat">
 
     <h1><?php echo isset($page_data[12]->main_heading) ? $page_data[12]->main_heading  : ""   ?></h1>
@@ -248,7 +248,7 @@
     <div class="home_sec2">
         <div class="row" style="margin: auto">
             <div class="col-md-6 p-0 px-md-2 leftBox">
-                <div title="bg_img" class="sec2_text home_bg1 div-sec" tabIndex=4
+                <div title="bg_img" class="sec2_text home_bg1 " tabIndex=4
                     style="background-position:center;background-image: url('<?php base_url( 'assets/imagess/home1.png') ?>');background-size:cover; background-repeat:no-repeat">
                     <h1 class="text-white">
                         <?php echo isset($page_data[4]->main_heading) ? $page_data[4]->main_heading : ''  ?>
@@ -265,7 +265,7 @@
                 </div>
             </div>
             <div class="col-md-6 p-0 px-md-2 rightBox">
-                <div title="bg_img" class="sec2_text div-sec" tabIndex=5
+                <div title="bg_img" class="sec2_text " tabIndex=5
                     style="background:url(<?= isset($page_data[5]->bg_img) ? base_url($page_data[5]->bg_img) : base_url( 'assets/imagess/clock.jpg')?>);background-size:cover;background-position: center; background-repeat: no-repeat">
                     <h1 class="text-white">
                         <?php echo isset($page_data[5]->main_heading) ? $page_data[5]->main_heading : ''  ?>
@@ -286,7 +286,7 @@
     <div class="home_sec2">
         <div class="row" style="margin: auto">
             <div class="col-md-6 p-0 px-md-2 leftBox">
-                <div class="sec2_text mt-0 home_bg1 div-sec btm-text" tabIndex=6 title="bg_img"
+                <div class="sec2_text mt-0 home_bg1  btm-text" tabIndex=6 title="bg_img"
                     style="background-position:center;background-image: url(<?= isset($page_data[6]->bg_img) ? base_url($page_data[6]->bg_img) : base_url( 'assets/imagess/product1.jpg')?>); background-size:cover; background-repeat:no-repeat;">
                     <h1 class="">
                         <?php echo isset($page_data[6]->main_heading) ? $page_data[6]->main_heading : ''  ?>
@@ -303,7 +303,7 @@
                 </div>
             </div>
             <div class="col-md-6 p-0 px-md-2 rightBox">
-                <div class="sec2_text mt-0 div-sec btm-text" tabIndex=7 title="bg_img"
+                <div class="sec2_text mt-0  btm-text" tabIndex=7 title="bg_img"
                     style="background-position:center;background-image: url(<?= isset($page_data[7]->bg_img) ? base_url($page_data[7]->bg_img) : base_url( '')?>); background-position: center; background-size:cover;background-repeat: no-repeat">
                     <h1 class="">
                         <?php echo isset($page_data[7]->main_heading) ? $page_data[7]->main_heading : ''  ?></h1>
@@ -324,7 +324,7 @@
     <div class="home_sec2">
         <div class="row" style="margin: auto">
             <div class="col-md-6 p-0 px-md-2 leftBox">
-                <div class="sec2_text mt-0 home_bg1 div-sec" tabIndex=8 title="bg_img"
+                <div class="sec2_text mt-0 home_bg1 " tabIndex=8 title="bg_img"
                     style="background-position:center;background-image: url(<?= isset($page_data[8]->bg_img) ? base_url($page_data[8]->bg_img) : base_url( '')?>); background-size:cover;background-repeat: no-repeat">
                     <h1 class="text-white">
                         <?php echo isset($page_data[8]->main_heading) ? $page_data[8]->main_heading : ''  ?>
@@ -341,7 +341,7 @@
                 </div>
             </div>
             <div class="col-md-6 p-0 px-md-2 rightBox">
-                <div class="sec2_text mt-0 div-sec" tabIndex=9 title="bg_img"
+                <div class="sec2_text mt-0 " tabIndex=9 title="bg_img"
                     style="background-position:center;background-image: url(<?= isset($page_data[9]->bg_img) ? base_url($page_data[9]->bg_img) : base_url( '')?>);background-repeat: no-repeat;background-size:cover;">
                     <h1 class="text-white">
                         <?php echo isset($page_data[9]->main_heading) ? $page_data[9]->main_heading : ''  ?>
@@ -362,7 +362,7 @@
     <div class="home_sec2">
         <div class="row" style="margin: auto">
             <div class="col-md-6 p-0 px-md-2 leftBox">
-                <div class="sec2_text mt-0 home_bg1 div-sec btm-text" tabIndex=10 title="bg_img"
+                <div class="sec2_text mt-0 home_bg1  btm-text" tabIndex=10 title="bg_img"
                     style="background-position:center;background-image: url(<?= isset($page_data[10]->bg_img) ? base_url($page_data[10]->bg_img) : base_url( 'assets/imagess/product1.jpg')?>); background-size:cover;background-repeat: no-repeat">
                     <h1 class="">
                         <?php echo isset($page_data[10]->main_heading) ? $page_data[10]->main_heading : ''  ?>
@@ -380,7 +380,7 @@
             </div>
 
             <div class="col-md-6 p-0 px-md-2 rightBox">
-                <div class="sec2_text mt-0 div-sec bg-style btm-text" tabIndex=11 title="bg_img">
+                <div class="sec2_text mt-0  bg-style btm-text" tabIndex=11 title="bg_img">
                     <h1 class="">
                         <?php echo isset($page_data[11]->main_heading) ? $page_data[11]->main_heading : ''  ?>
                     </h1>

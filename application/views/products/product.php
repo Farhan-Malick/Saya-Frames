@@ -163,8 +163,17 @@
                             </div>
                         </div>
                         <br>
-                        <div class="button cart_button"><a href="<?= base_url('home/product/'. $product['id']); ?>">Add to cart</a></div>
-
+                        <div>
+                            <input type="hidden" name="product_id" class="product_id<?php echo $product['id']  ?>" value="<?php echo $product['id'] ?>">
+                            <input type="hidden" name="product_name" class="product_name<?php echo $product['id']  ?>" value="<?php echo $product['product_name'] ?>">
+                            <input type="hidden" name="product_img" class="product_img<?php echo $product['id']  ?>" value="<?php echo $product['product_img'] ?>">
+                            <input type="hidden" name="product_price" class="product_price<?php echo $product['id']  ?>" value="<?php echo $product['price'] ?>">
+                        <?php if($this->session->userdata('customer_logged_in')) { ?>
+                            <button class="button cart_button"  type="button" onclick="addtocart(<?php echo $product['id'] ?>)">Add to cart</button>
+                            <?php }else{ ?>                           
+                            <a class="button cart_button" href="<?= base_url('home/product'); ?>">Add to cart</a>
+                            <?php }?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,6 +270,33 @@
 
 <script src="<?= base_url('assets/js/products.js'); ?>"></script>
 <script src="<?= base_url('assets/js/isotope.pkgd.min.js'); ?>"></script>
+<script type="text/javascript">
+    function addtocart(p_id)
+    {
+        // alert("hello");
+        var id = $('.product_id'+p_id).val();
+        var names = $('.product_name'+p_id).val();
+        var name = names.replace(/[_\W]+/g," ");
+        var price = $('.product_price'+p_id).val();
+        var image = $('.product_img'+p_id).val();
+        var quantity = 1;
+        // alert(id+' '+'=>'+name+' '+'=>'+price+' '+'=>'+image+' '+'=>'+quantity);
+        $.ajax({
+            type:"POST",
+            url: "<?php echo base_url('home/addToCart'); ?>",
+            data:{
+                id : id,
+                name : name,
+                price : price,
+                image : image,
+                quantity : quantity
+            },
+            success:function (response){
+
+            }
+        });
+    }
+</script>
 <script>
 // var swiper = new Swiper('.blog-slider', {
 //     spaceBetween: 30,

@@ -143,7 +143,7 @@
 								<button type="submit" class="btn bg-dark btn-block"><?php echo isset($customerData) ? "Update" :"Register" ?> </button>
 							</form>
 							<div style="text-align:right; margin-top: 10px;">
-							<p>Already member?  <a href="/login">Login here</a></p>
+							<p>Already member?  <a href="/saya_frames/login">Login here</a></p>
 							</div >
 							
 						</div>

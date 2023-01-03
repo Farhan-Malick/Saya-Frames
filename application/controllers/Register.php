@@ -11,7 +11,7 @@ class Register extends CI_Controller
 			$data['customerData']=$session_data;
 		} 
 		    $this->load->view('admin/header',$data);
-			$this->load->view('register',);
+			$this->load->view('register',$data);
 	}
 
 	function registerCustomer()
@@ -24,14 +24,13 @@ class Register extends CI_Controller
 		$verify = $this->Sitemodel->getCustomerByEmail($email);
 		if ($verify == false) {
 			$inserted = $this->Sitemodel->register($_POST);
-			if ($inserted) {
+			if ($inserted) { 
 			redirect('login');
 			}
 		}
 		else{
 			redirect('register/index?err1=1');
 		}
-
 		// print_r($inserted);
 	}
 	function updateCustomer()
