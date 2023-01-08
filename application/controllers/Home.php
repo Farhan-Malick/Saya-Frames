@@ -29,7 +29,7 @@ class Home extends CI_Controller
 		$this->load->view('index');
 		$this->load->view('footer');
 	}
-
+		
 	 public function listing($page_id, $section_id = '0', $filter = '', $price = false)
 	//public function listing()
 	{
@@ -113,11 +113,19 @@ class Home extends CI_Controller
 			// 'orderId' =>0;
 			$cartProduct = $this->db->select('*')
 			->from('cart')
-			->where(['user_id'=> $user_id, 'id',$product_id])
-			->get();
+			// ->join('customers', 'customers.customerId = tbl_products.user_id')
+			->where(['user_id'=> $this->session->userdata('customer_logged_in'), 'id',$product_id])->get();
 			if($cartProduct == '')
 			{
-				echo 'insert';
+				$data = array(
+					'user_id' => $user_id,
+					'product_id' => $product_id,
+					'product_name' => $name,
+					'product_price' => $price,
+					'product_img' => $image,
+					'product_quantity' => $quantity
+				);
+				$this->db->insert('cart',$data);
 			}else{
 				echo 'update';
 			}
@@ -248,7 +256,25 @@ public function addOrders()
 			}						
 		}			
 	}
-
+	public function profile()
+	{
+		if(!$this->session->userdata('customer_logged_in')){
+		
+			echo json_encode(0);
+			return;
+		}
+		$customer = $this->session->userdata('customer_logged_in');
+		// echo json_encode($customer);
+		// $this->load->library('session');
+		$this->load->library('cart');
+		unset($_SESSION['slider_session']);
+		$this->load->model('Sitemodel');
+		$data['page_data'] = $this->Sitemodel->getPageData(25);
+		// $customer['customerdata'] = $this->Sitemodel->customerData();
+		$this->load->view('header', $data);
+		$this->load->view('profile');
+		$this->load->view('footer');
+	}
 	/*********PRODUCTS*********/
 	public function products()
 	{

@@ -438,6 +438,10 @@ p.cartbar-item-price {
                     <hr class="d-block d-lg-none">
                     <div class="dropdown-menu dropdown-menu-right bg-dark"
                         style="z-index: 999999;left:-95px;border-radius: 20px;">
+                        <span class="dropdown-item" style="font-size: 0.9rem;">
+                            <i class="fas fa-user-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                href="<?= base_url('home/profile'); ?>">My Profile</a>
+                        </span>
                         <!-- <span class="dropdown-item" href="#"
 							style="font-size: 0.9rem;border:none!important;text-align: center;color:white!important;padding: 20px 0;">Your
 							Bag is empty.</span>
@@ -464,6 +468,7 @@ p.cartbar-item-price {
                                 href="<?= base_url('login'); ?>">Sign in</a>
                         </span>
                         <?php } ?>
+                        
                     </div>
                 </li>
                 <li class="nav-item dropdown">

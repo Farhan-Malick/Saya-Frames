@@ -223,6 +223,16 @@ class Sitemodel extends CI_Model
             return false;
         }
     }
+    function customerData()
+    {
+        $obj = new Dbase();
+        $data = $obj->selectSRow(array('*'), 'customers');
+        if (count($data) > 0) {
+            return $data;
+        } else {
+            return false;
+        }
+    }
 
     function adminVerifyLogin($email, $password)
     {
