@@ -9,7 +9,7 @@
 <body>
     <h1>EXEC <DETAIL></DETAIL></h1>
 <?php
-phpinfo();
+echo CI_VERSION;
 ?>
 </body>
 </html>

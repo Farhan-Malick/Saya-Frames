@@ -100,39 +100,55 @@ class Home extends CI_Controller
 		$this->load->view('cart');
 		$this->load->view('footer');
 	}
+	// public function addToCart()
+	// {	
+	// 	$this->load->library('cart');
+	// 		$user_id = $this->session->userdata('customer_logged_in');
+	// 		$product_id = $this->input->post('id');
+	// 		$name = $this->input->post('name');
+	// 		$price = $this->input->post('price');
+	// 	    $image = $this->input->post('image');
+	// 		$quantity = $this->input->post('quantity');
+	// 		// 'discount'    => $this->input->post('discount');
+	// 		// 'orderId' =>0;
+			
+	// 		$cartProduct = $this->db->select('*')
+	// 		->from('cart')
+	// 		// ->join('customers', 'customers.customerId = tbl_products.user_id')
+	// 		->where(['user_id'=> $this->session->userdata('customer_logged_in'), 'id',$product_id])->get();
+	// 		if($cartProduct == '')
+	// 		{
+	// 			$data = array(
+	// 				'user_id' => $user_id,
+	// 				'product_id' => $product_id,
+	// 				'product_name' => $name,
+	// 				'product_price' => $price,
+	// 				'product_img' => $image,
+	// 				'product_quantity' => $quantity
+	// 			);
+	// 			$this->db->insert('cart',$data);
+	// 		}else{
+	// 			echo 'update';
+	// 		}
+	// 		// echo $this->cart->insert($data);
+	// 	//  echo $this->input->post('qty');
+	// }
 	public function addToCart()
-	{	
+	{
 		$this->load->library('cart');
-			$user_id = $this->session->userdata('customer_logged_in');
-			$product_id = $this->input->post('id');
-			$name = $this->input->post('name');
-			$price = $this->input->post('price');
-		    $image = $this->input->post('image');
-			$quantity = $this->input->post('quantity');
-			// 'discount'    => $this->input->post('discount');
-			// 'orderId' =>0;
-			$cartProduct = $this->db->select('*')
-			->from('cart')
-			// ->join('customers', 'customers.customerId = tbl_products.user_id')
-			->where(['user_id'=> $this->session->userdata('customer_logged_in'), 'id',$product_id])->get();
-			if($cartProduct == '')
-			{
-				$data = array(
-					'user_id' => $user_id,
-					'product_id' => $product_id,
-					'product_name' => $name,
-					'product_price' => $price,
-					'product_img' => $image,
-					'product_quantity' => $quantity
-				);
-				$this->db->insert('cart',$data);
-			}else{
-				echo 'update';
-			}
-			// echo $this->cart->insert($data);
+		$data = array(
+			'id'      => $this->input->post('id'),
+			'qty'     => $this->input->post('qty'),
+			'price'   => $this->input->post('price'),
+			'discount'    => $this->input->post('discount'),
+		    'product_img'    => $this->input->post('product_img'),
+			'name'    => $this->input->post('name'),
+			'orderId' =>0
+			);
+			echo $this->cart->insert($data);
 		//  echo $this->input->post('qty');
 	}
-	// Cart functionality is done by now now just have to integrate 
+	// Cart functionality is by now, now we just have to integrate this functionality
 	public function removeFromCart()
 	{
 		$rowid = $this->input->get('rowid');
@@ -187,6 +203,7 @@ public function addOrders()
 	//print_r($this->Sitemodel->addOrder($order));
 }
 	/***************OrdersEnd******************/
+
 	public function product_categories()
 	{
 		$this->load->library('cart');
